@@ -3,22 +3,23 @@
 $(init)
 var $elPortfolioItem
 
-function init(){
+function init() {
   renderProjs()
 }
+$(".contact .btn").on('click', onSendMail);
 
 
-function renderProjs(){
+function renderProjs() {
   var strHTML = ''
   const elProjectsContainer = $('.projects')
   var projects = getProjects()
-  
+
   var counter = 0
-  projects.forEach((proj)=>{
+  projects.forEach((proj) => {
     console.log(proj.name);
     counter++
     console.log(proj.id);
-    strHTML+= `<div class="col-md-4 col-sm-6 portfolio-item" data-proj="${proj.id}">
+    strHTML += `<div class="col-md-4 col-sm-6 portfolio-item" data-proj="${proj.id}">
     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal">
     <div class="portfolio-hover">
     <div class="portfolio-hover-content">
@@ -32,24 +33,34 @@ function renderProjs(){
     <p class="text-muted">Illustration</p>
     </div>
     </div>`
- 
-  
+
+
   })
   elProjectsContainer.html(strHTML)
   $('.portfolio-item').on('click', renderModal)
 
 }
 
-function renderModal(){
+function renderModal() {
   var projId = $(this).data().proj
   var proj = getProjById(projId)
-console.log(proj);
-$('.modal-body h2').text(proj.name)
-$('.modal-body p').text('intro')
-$('.describe').text(proj.desc)
-$('.modal-body .img-fluid').attr('src',`img/portfolio/${proj.id}.png`)
-$('.try-me').attr('action',`${proj.url}`)
+  console.log(proj);
+  $('.modal-body h2').text(proj.name)
+  $('.modal-body p').text('intro')
+  $('.describe').text(proj.desc)
+  $('.modal-body .img-fluid').attr('src', `img/portfolio/${proj.id}.png`)
+  $('.try-me').attr('action', `${proj.url}`)
 
+
+
+}
+
+function onSendMail() {
+  const mail = $('#contact-form #email').val()
+  const subject = $('#contact-form #subject').val()
+  const message = $('#contact-form #message').val()
+  const myMail = 'shilo.klein1@gmail.com'
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${myMail}.com&su=${subject}&body=${message}`)
 
 
 }

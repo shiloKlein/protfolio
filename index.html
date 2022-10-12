@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Coding Academy</title>
+  <title>Shilo Klein</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,15 +27,84 @@
 </head>
 
 <body id="page-top">
+
   <div class="offcanvas-btn" onclick="openCanvas()">
     <i class="fa fa-comment" aria-hidden="true"></i>
   </div>
+  
   <aside class="offcanvas-aside">
-    <a href="./projects/touchTheNums/index.html"></a>
     <!-- Contact me -->
     <section>
-      <h4>Contact Me</h4>
-    </section>   
+      <!-- <h4>Contact Me</h4> -->
+      <section class="mb-4 contact">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet.</p>
+
+        <div class="d-flex justify-content-center">
+
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+
+                <div class="">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email" class="">Your email</label>
+                  </div>
+                </div>
+                <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row1">
+                <div class="">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row1">
+
+                <!--Grid column-->
+                <div class="">
+
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2"
+                      class="form-control md-textarea"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+
+                </div>
+              </div>
+              <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+              <button class="btn btn-primary" type="button" ">Send</button>
+                </div>
+                <div class=" status">
+            </div>
+          </div>
+          <!--Grid column-->
+
+
+
+        </div>
+      </section>
 
   </aside>
 
@@ -68,10 +137,10 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead"> 
+  <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in text-dark">Welcome To my Portfolio</div>
+        <div class="intro-lead-in text-light">Welcome To my Portfolio</div>
         <div class="intro-heading text-dark">It's Nice To Meet You</div>
         <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
@@ -133,91 +202,7 @@
         </div>
       </div>
       <div class="projects row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
-          </div>
-        </div>
+     </div>
       </div>
     </div>
   </section>
@@ -326,14 +311,10 @@
                 <p class="item-intro text-muted"></p>
                 <img class="img-fluid d-block mx-auto" src="" alt="">
                 <p class="describe"></p>
-                <!-- <ul class="list-inline">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul> -->
+               
                 <form class="try-me" action="" target="_blank">
                   <button class="btn btn-success" type="submit" style="margin:10px">Try Me</button>
-              </form>
+                </form>
                 <button class="btn btn-primary " data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
                   Close Project</button>
