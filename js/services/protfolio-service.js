@@ -40,8 +40,14 @@ const G_PROJECTS =
     lables: ['shop', 'books'],
 }
 ]
-console.log('use strict');
 
 function getProjects(){
     return G_PROJECTS
+}
+
+
+
+function getProjById(projId){
+    var project = G_PROJECTS.find((proj)=> proj.id===projId)
+    return project
 }
