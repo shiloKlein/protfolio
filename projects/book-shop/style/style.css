@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: bisque;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    text-transform: capitalize;
+
+}
+
+.filters-container label {
+    width: 33%;
+    /* height: 33.333%; */
+    /* max-width: 40%;
+    min-width: 60px; */
+}
+
+.filters-container input {
+    /* max-width: 100px; */
+    min-width: 30px;
+}
+
+.presentation {
+    height: 45px;
+    width: 45px;
+    padding: 0px;
+}
+
+.presentation img {
+    width: 100%;
+    height: 100%;
+}
+.books-container{
+    margin: auto;
+    width: 90vw;
+    background-color:rgb(214, 171, 90);
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    height: 40px;
+}
+td button{
+    font-size: large;
+    background-color: #e3bc3d;
+    border-radius: 8px;
+    border: 0px;
+}
+ button:hover {
+    background-color: #e2bf4f;
+     color:rgb(134, 54, 54)
+}
+.header-sorter:hover{
+    cursor: pointer;
+    background-color: #e3bc3d;
+}
+
+.cards {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    height: 55%;
+    min-width: 60px;
+    min-height: 100px;
+    background-color: #f5d997;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+
+}
+
+
+.cover {
+    width: 80%;
+    height: 50%;
+    max-width: 200px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 80px;
+    ;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 4em;
+}
+.details h5{
+    margin: 1px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.actions button {
+
+    font-size: large;
+    background-color: #e2bf4f;
+     color:rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 0px;
+}
+
+.card button:hover {
+    background-color: #fec714;
+     color:rgb(134, 54, 54)
+}
+
+.read-modal {
+    background-color: burlywood;
+    min-width: 50vw;
+    min-height: 90vh;
+    border-radius: 8px;
+    position: absolute;
+    left: 150%;
+    top: 0px;
+    transition: 0.6s;
+
+
+}
+
+.read-modal.open {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 0px;
+    transition: 0.6s;
+}
+
+.read-modal img {
+    height: 120px;
+}
+
+.quantity-number {
+    display: inline;
+    border: 1px solid grey;
+    padding: 4px 0px;
+}
+
+.quantity-number input {
+    border: none;
+    padding: 5x 10px;
+}
+
+.quantity-number button {
+    background-color: grey;
+    border: none;
+    padding: 6px 10px;
+}
+
+.i {
+    display: inline-block;
+}

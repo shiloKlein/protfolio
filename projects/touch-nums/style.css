@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background-color: rgb(34, 21, 62);
+    color: rgb(6, 239, 239);
+}
+h1:hover, h2:hover{
+    /* background-color: black; */
+    text-shadow: 10px 10px 25px rgb(84, 71, 169);
+    transition: 0.3s;
+}
+
+.new-game{
+ margin: 10px auto 10px auto;
+ padding: 5px;
+}
+.board{
+    margin:20px auto 20px auto;
+    /* border: 1px solid black; */
+    padding: 5px;
+    border-collapse: collapse;
+    background-color: rgb(56, 107, 202);
+    border-radius: 20px;
+    box-shadow: 10px 5px 25px 10px rgb(106, 90, 214) ;
+}
+
+.cell{
+    /* border:solid 1px black ; */
+    padding:35px;
+    box-shadow: 0px 0px 25px 5px cornflowerblue ;
+    border-radius: 20px;
+    color: #e3c230;
+    font-size: larger;
+    font-weight: 700;
+    font-style: oblique;
+    border: 30px solid rgba(255,255,255,0);
+    transition: 0.3s;
+    opacity:0.7
+}
+.cell:hover{
+    background-color:rgb(27, 83, 187) ;
+    box-shadow: -5px 5px 10px 5px #e3c230;
+    color: #ffd000;
+    opacity:0.7
+
+}
+.pressed{
+    filter:blur(2px)
+    /* box-shadow: 0 0 10px 5px #534c2c; */
+}
+.pressed:hover{
+    box-shadow: 0 0 10px 5px #5f1111;
+    color: #5f1111;
+}
+.button{
+    transition:0.3s;
+    background-color: #bea01c ;
+    color: rgb(39, 114, 253);
+    border-radius: 15px;
+    padding:15px;
+    width:90px;
+    font-weight: bold;
+    box-shadow: 10px 5px 25px 5px rgb(84, 71, 169);
+    cursor: pointer
+}
+.button:hover{
+    background-color: #ffcd28 ;
+    color: rgb(27, 92, 213);
+    box-shadow: 10px 5px 45px 25px rgb(84, 71, 169)
+}
+.new-game{
+    width:150px;
+    /* height:25px; */
+    padding:25px
+    
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>book-shop</title>
+</head>
+
+<body onload="onInit()">
+    <form onsubmit="onAddBook(event)">
+    <button> add new book</button><br>
+    <input type="text" name="add-name" placeholder="name"/>
+    <input type="number" name="add-price" placeholder="price"/>
+</form>
+
+    <section class="filters-container">
+        <label>
+            max price:
+            <input type="range" min="0" max="300" value="50" class="filter-price-range"
+                onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+        </label>
+        <label>
+            Min rate:
+            <input type="range" min="0" max="10" value="0" class="filter-rate-range"
+                onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+        </label>
+        <lable>
+            search:
+            <input type="text" value="" class="filter-txt" onkeyup="onSetFilterBy({txt: this.value})" />
+        </lable>
+    </section>
+    <button class = "presentation" onclick="onPresentationChange()"><img src="./img/cards-presentation.jpg" this.title="change to cards view"></button>
+    <label>
+        Descending
+        <input class="sort-desc" type="checkbox" oninput="onSetSorting()" />
+        </label>
+    <section class="books-container">
+  
+</section>
+
+    <button class="prev-page" onClick="onPrevPage()"><</button>
+    <a class="page-link">1</a>
+    <button class="next-page" onClick="onNextPage()">></button>
+    <section class="read-modal">
+
+        
+        <input class="rate-choose" type="number" oninput="onUpdateRate()" min="0" max="10" value="0" step="1">
+
+        <h4 class="tId"></h4>
+        <h4 class="tName"></h4>
+        <h4 class="tPrice"></h4>
+        <p class="tImg">
+        <p></p>
+        <button class=close-modal-btn onclick="onCloseBookModal(this)"> close details</button>
+    </section>
+    <!-- <section class="add-book-modal">
+       <input type="text" value="name">
+       <input type="text" value="name">
+    </section> -->
+    <script src="./js/services/utils-service.js"> </script>
+    <script src="./js/services/storage-service.js"> </script>
+    <script src="./js/services/book-service.js"> </script>
+    <script src="./js/book-controller.js"> </script>
+</body>
+
+</html>

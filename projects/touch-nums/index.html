@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>press the buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <h1>Hit the numbers</h1>
+    <h2>In the right order</h2>
+
+    <button class="new-game button" onclick="onNewGame()" >New Game</button><br>
+    <button class="level button" id="16" onclick="onlevelChoise(this)">easy</button>
+    <button class="level button" id="25" onclick="onlevelChoise(this)">hard</button>
+    <button class="level button" id="36" onclick="onlevelChoise(this)">Extreme</button>
+
+    <table class="board">
+    </table>
+    <div><br>
+        <h2>watch the time</h2>
+        <div class="wrapper">
+            <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+            <p class="best-time"></p>
+          </div>
+
+    <script src="main.js"></script>
+    <script src="util.js"></script>
+</body>
+
+</html>
